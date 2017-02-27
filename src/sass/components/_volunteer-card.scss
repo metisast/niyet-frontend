@@ -1,0 +1,33 @@
+// Volunteer card
+
+.volunteer-card{
+  .volunteer-card-item{
+    position: relative;
+    .volunteer-card-photo{
+      position: relative;
+      z-index: 3;
+      margin-top: 30px;
+      img{
+        width: 100%;
+      }
+      p{
+        font-family: $hypatia-bold;
+        color: $color-black;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+    }
+    .volunteer-text{
+      @include box-shadow($box-shadow-card);
+      height: 100%;
+      h4{
+        margin-top: 0;
+        padding-left: 120px;
+        font-family: $hypatia-regular;
+        color: $color-black-secondary;
+        line-height: 1.5;
+      }
+    }
+  }
+}

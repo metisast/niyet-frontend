@@ -1,0 +1,35 @@
+// Principle card
+.principle-card{
+
+  .principle-card-text{
+    position: relative;
+    background: $bg-white;
+    height: 320px;
+    margin-top: 30px;
+    overflow: hidden;
+    @include box-shadow($box-shadow-card);
+    h2, p{
+      position: relative;
+      padding: 0 100px;
+      z-index: 2;
+    }
+    h2{
+      margin-top: 0;
+    }
+    .card-number{
+      position: absolute;
+      color: $color-lighter-pink;
+      font-family: $hypatia-black;
+      font-size: 12.5rem;
+      z-index: 1;
+      height:163px;
+      bottom: 0;
+      &.right{
+        right: -5px;
+      }
+    }
+  }
+  .principle-card-pic{
+
+  }
+}

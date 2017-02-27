@@ -1,0 +1,12 @@
+#wrapper{
+  background-color: $wrapper-bg;
+  >section{
+    padding: 0 35px;
+    @include respond-to(extra-small-screen){
+      padding: 0;
+    }
+    @include respond-to(small-screen){
+      padding: 0;
+    }
+  }
+}

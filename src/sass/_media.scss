@@ -1,0 +1,22 @@
+@import "variables";
+
+// Media
+$extra-small: 544px;
+$small: 768px;
+$medium: 992px;
+$large: 1300px;
+
+@mixin respond-to($media) {
+  @if $media == extra-small-screen {
+    @media only screen and (max-width: $extra-small) { @content; }
+  }
+  @else if $media == small-screen {
+    @media only screen and (min-width: $extra-small + 1) and (max-width: $small - 1) { @content; }
+  }
+  @else if $media == medium-screen {
+    @media only screen and (min-width: $small + 1) and (max-width: $medium - 1) { @content; }
+  }
+  @else if $media == large-screens {
+    @media only screen and (min-width: $large) { @content; }
+  }
+}

@@ -1,0 +1,42 @@
+@import "variables";
+@import "media";
+@import "mixins";
+
+@include font-face($hypatia-regular, '../fonts/HypatiaSansPro-Regular', 'hypatia-regular');
+@include font-face($hypatia-bold, '../fonts/HypatiaSansPro-Bold', 'hypatia-bold');
+@include font-face($hypatia-black, '../fonts/HypatiaSansPro-Black', 'hypatia-black');
+
+html{
+
+}
+body {
+  background-color: $main-bg;
+  font-family: $hypatia-regular;
+  padding: 0 2%;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $hypatia-bold;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: $color-black;
+}
+p{
+  color: $color-black-secondary;
+  line-height: 1.4;
+  font-size: 18px;
+}
+a,p,span{
+  /*font-size: $font-size-regular;*/
+  margin: 0;
+}
+input{
+  &:focus{
+    outline: none;
+  }
+}

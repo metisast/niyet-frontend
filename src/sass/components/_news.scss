@@ -1,0 +1,117 @@
+// News
+.news{
+  margin-top: -240px;
+
+  .row-sub{
+    column-count: 4;
+    column-width: 20em;
+    column-gap: 2em;
+    position: relative;
+    padding-bottom: 150px;
+  }
+
+  .news-item{
+    display: inline-block;
+    background: $bg-white;
+    margin-bottom: 30px;
+    vertical-align:text-top;
+    position: relative;
+    z-index: 2;
+    @include transition($transition-ease);
+    &:hover{
+      @include box-shadow($box-shadow-card);
+    }
+  }
+  .news-pic{
+    position: relative;
+    >img{
+      width: 100%;
+    }
+    .news-icon{
+      position: absolute;
+      content: '';
+      width: 80px;
+      height: 80px;
+      background-image: url(./../../images/svg/button_news.svg);
+      right: 20px;
+      bottom: -35px;
+      cursor: pointer;
+      text-align: center;
+      vertical-align: middle;
+      img{
+        margin-top: 32px;
+      }
+      &:hover{
+        fill: $color-red;
+      }
+    }
+  }
+  .news-date, .news-title, .news-text, .news-read-more{
+    padding: 0 30px;
+  }
+  .news-date{
+    position: relative;
+    margin-top: 30px;
+    font-family: $hypatia-bold;
+    span{
+      position: absolute;
+      content: '';
+      width: 2px;
+      height: 80px;
+      background: $bg-black;
+      left: 20px;
+      top: -65px;
+    }
+    p{
+      color: $color-black;
+    }
+  }
+  .news-read-more{
+    padding-bottom: 30px;
+    a{
+      font-family: $hypatia-bold;
+    }
+  }
+
+  .news-bg{
+    position: absolute;
+    content: '1';
+    height: 100%;
+    background: $bg-light-pink;
+    left: 0;
+    top:0;
+    z-index: 1;
+  }
+
+  .btn-news-load{
+    top: -130px;
+    position: relative;
+    cursor: pointer;
+    content: '';
+    z-index: 3;
+    &:hover{
+      .circle-arrow{
+        svg {
+          @include transition($transition-ease);
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+    .heart{
+      position: relative;
+      top: -38px;
+    }
+    .btn-news-load-text{
+      position: relative;
+      top: -15px;
+      p{
+        font-family: $hypatia-bold;
+        text-transform: uppercase;
+        color: $color-black;
+        font-size: 14px;
+      }
+    }
+  }
+}

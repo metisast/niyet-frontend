@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70.688" height="70.688" viewBox="0 0 70.688 70.688">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b6cf49;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="diamond" class="cls-1" d="M407,760.645L442.355,796,407,831.355,371.645,796Z" transform="translate(-371.656 -760.656)"/>
+</svg>

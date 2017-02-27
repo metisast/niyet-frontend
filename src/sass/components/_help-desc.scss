@@ -1,0 +1,31 @@
+// Help description
+
+.help-desc{
+  margin-top: 50px;
+  .help-desc-item{
+    margin-bottom: 30px;
+    .help-desc-number{
+      position: relative;
+      height: 100%;
+      span{
+        font-family: $hypatia-black;
+        font-size: 58px;
+      }
+      div{
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 50%;
+        background: $bg-black;
+        left: 32px;
+      }
+    }
+    &:nth-child(2){
+      .help-desc-number{
+        div{
+          height: 70%;
+        }
+      }
+    }
+  }
+}

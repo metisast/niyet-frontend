@@ -1,0 +1,9 @@
+// Simple picture
+
+.simple-pic{
+  position: relative;
+  img{
+    position: relative;
+    z-index: 1;
+  }
+}

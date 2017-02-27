@@ -1,0 +1,23 @@
+// Quote
+.quote-content{
+  background: center no-repeat;
+  background-size: contain;
+  &.svg-pic-bird{
+    background-image: url(./../../images/svg/pic_bird.svg);
+  }
+  &.svg-pic-hands-heart{
+    background-image: url(./../../images/svg/pic_hands_heart.svg);
+  }
+  &.svg-pic-hand{
+    background-image: url(./../../images/svg/pic_hand.svg);
+  }
+  &.svg-pic-big-heard{
+    background-image: url(./../../images/svg/pic_heart.svg);
+  }
+  h6{
+    font-family: $hypatia-regular;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}

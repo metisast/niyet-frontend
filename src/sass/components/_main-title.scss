@@ -1,0 +1,12 @@
+// Main title
+.main-title{
+  & h1, & p{
+    font-family: $hypatia-bold;
+  }
+  & p{
+    color: $color-black;
+  }
+}
+.main-title-pic{
+  margin-top: -290px;
+}

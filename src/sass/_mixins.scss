@@ -1,0 +1,30 @@
+@import "variables";
+
+// Font-face
+@mixin font-face($family, $path, $svg, $weight: normal, $style: normal){
+  @font-face{
+    font-family: $family;
+    src: url('#{$path}.eot');
+    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+// Transition
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// Box-shadow
+@mixin box-shadow($args...) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  -ms-box-shadow: $args;
+  -o-box-shadow: $args;
+  box-shadow: $args;
+}

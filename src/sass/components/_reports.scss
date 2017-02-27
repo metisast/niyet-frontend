@@ -1,0 +1,44 @@
+// Reports
+
+.reports{
+  margin-top: 20px;
+  .report-item{
+    position: relative;
+    margin-bottom: 80px;
+    &:hover{
+      .report-border{
+        svg{
+          fill: $color-black;
+        }
+      }
+      .report-glasses{
+        svg{
+          fill: $color-white;
+        }
+      }
+    }
+    .report-border{
+      svg{
+        @include transition($transition-ease);
+        transform: scale(1.4);
+        stroke: $color-black;
+        fill: $color-white;
+        stroke-width: 3px;
+      }
+    }
+    .report-glasses{
+      position: relative;
+      top: -53px;
+      svg{
+        @include transition($transition-ease);
+        fill: $color-black;
+      }
+    }
+    .report-title{
+      p{
+        font-family: $hypatia-bold;
+        color: $color-black;
+      }
+    }
+  }
+}

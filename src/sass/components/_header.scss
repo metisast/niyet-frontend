@@ -1,0 +1,41 @@
+// Header
+#header{
+  //margin-bottom: $m-b-large;
+}
+// Top navigation
+.top-navigation{
+  margin-top: 68px;
+  ul{
+    li{
+      float: left;
+      margin-right: 30px;
+      a{
+        font-family: $hypatia-bold;
+        padding-bottom: 25px;
+        display: block;
+        position: relative;
+        &.active:after{
+          content: '';
+          width: 62px;
+          height: 4px;
+          background: $bg-black;
+          position: absolute;
+          border-bottom: 4px solid $color-black;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+// Top logo
+.logo-top{
+  margin-top: 15px;
+}
+// Top auth links
+.top-auth-links{
+  margin-top: 65px;
+  .btn{
+    margin-left: 20px;
+  }
+}

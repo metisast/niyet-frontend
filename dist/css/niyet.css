@@ -22,7 +22,8 @@ body {
   padding: 0 2%; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "hypatia-bold"; }
+  font-family: "hypatia-bold";
+  margin-bottom: 0; }
 
 ul {
   list-style: none;
@@ -65,7 +66,8 @@ input:focus {
       font-family: "hypatia-bold";
       padding-bottom: 25px;
       display: block;
-      position: relative; }
+      position: relative;
+      font-size: 18px; }
       .top-navigation ul li a.active:after {
         content: '';
         width: 62px;
@@ -325,6 +327,8 @@ input:focus {
         height: 50%;
         background: #000;
         left: 32px; }
+    .help-desc .help-desc-item:nth-child(1) .help-desc-number div {
+      height: 20px; }
     .help-desc .help-desc-item:nth-child(2) .help-desc-number div {
       height: 70%; }
 
@@ -348,6 +352,7 @@ input:focus {
   padding: 10px 20px;
   font-family: "hypatia-bold";
   color: #000;
+  font-size: 18px;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
@@ -404,6 +409,9 @@ input:focus {
 
 .bg-gray {
   background: #f1f1f1; }
+
+.bg-green-light {
+  background: #eff2df; }
 
 .hidden-290 {
   height: 290px; }

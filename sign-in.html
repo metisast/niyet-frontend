@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./dist/css/niyet.css">
+</head>
+<body>
+    <div class="container-fluid" id="wrapper">
+        <section>
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <!-- Header start -->
+                    <div id="header">
+                        <!-- Desktop nav -->
+                        <div class="desktop-header">
+                            <div class="row no-gutters hidden-md-down">
+                                <div class="col-md-5">
+                                    <nav class="top-navigation">
+                                        <ul>
+                                            <li><a href="index.html">О фонде</a></li>
+                                            <li><a href="index2.html">Наша работа</a></li>
+                                            <li><a href="index3.html">Как помочь</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-2 text-center">
+                                    <div class="logo-top text-center">
+                                        <a href="#">
+                                            <img src="./images/svg/logo_niyet.svg" alt="logo-niyet" width="140">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="top-auth-links text-right">
+                                        <a href="#" class="btn btn-help">
+                                            <img class="svg icon fill-red" src="./images/svg/button_heart.svg">Помочь
+                                        </a>
+                                        <a href="./sign-in.html" class="btn btn-sign-in active">
+                                            <img class="svg icon fill-green" src="./images/svg/button_lock.svg">Войти
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile nav -->
+                        <div class="row no-gutters hidden-lg-up">
+                            <div class="col-12">
+                                <div class="mobile-header">
+                                    <div class="row no-gutters">
+                                        <div class="col-5"></div>
+                                        <div class="col-2 text-center">
+                                            <div class="mobile-logo">
+                                                <a href="#">
+                                                    <img src="./images/svg/logo_small.svg" alt="logo-niyet" width="60">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="mobile-bars">
+                                                <a id="hamburger-icon" href="#" title="Menu">
+                                                    <span class="line line-1"></span>
+                                                    <span class="line line-2"></span>
+                                                    <span class="line line-3"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <nav class="mobile-nav text-center">
+                                                <ul>
+                                                    <li><a href="#" class="active">О фонде</a></li>
+                                                    <li><a href="#" class="active">Наша работа</a></li>
+                                                    <li><a href="#" class="active">Как помочь</a></li>
+                                                </ul>
+                                                <div class="mobile-auth-links">
+                                                    <a href="#" class="btn btn-help">
+                                                        <img class="svg icon fill-red" src="./images/svg/button_heart.svg">Помочь
+                                                    </a>
+                                                    <a href="#" class="btn btn-sign-in">
+                                                        <img class="svg icon fill-green" src="./images/svg/button_lock.svg">Войти
+                                                    </a>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Header end -->
+                    <!-- Sign in start -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="sign-in">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="sign-in-desc">
+                                                <p>Фонд «Ниет» является светским фондом и работает согласно законодательству Республики Казахстан. Главной нашей миссией, всегда, является благосостояние и здоровье детей, поэтому мы принимает пожертвования от всех граждан не зависимо от их национальности, происхождения, статуса и вере исповедания. Мы даем возможности к совершению пожертвований, верующим мусульманам в уплате ежегодного мусульманского налога – Закят. Если вы хотите помочь Фонду через выплату Закята, пожалуйста укажите это при регистрации. В таком случае пользователям, указавшим это, будет доступна дополнительная функция в виде калькулятора для расчета Мусульманского налога.</p>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">
+                                                <img class="svg icon fill-blue" src="./images/svg/button_lock.svg">Регистрация
+                                            </a>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="sign-in-form">
+                                                <div class="sign-in-title">
+                                                    <h1>Вход</h1>
+                                                </div>
+                                                <form action="" method="post">
+                                                    <!-- Error include classes: has-danger and text-danger -->
+                                                    <div class="form-group">
+                                                        <label>E-mail</label>
+                                                        <input class="form-control" type="email" name="email" >
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Пароль</label>
+                                                        <input class="form-control" type="password" name="password">
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-sign-in">
+                                                                <img class="svg icon fill-green" src="./images/svg/button_lock.svg">Войти
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-md-6 text-right">
+                                                            <a href="#"><strong>Забыли пароль?</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Sign in end -->
+                    <!-- Footer start -->
+                    <div class="container-fluid">
+                        <div class="footer mb-6">
+                            <div class="row">
+                                <div class="col-12 mt-6">
+                                    <div class="footer-content">
+                                        <div class="footer-subscribe">
+                                            <form action="">
+                                                <input type="text" placeholder="Подпишитесь на нашу рассылку">
+                                            </form>
+                                        </div>
+                                        <div class="footer-items">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <h5>Адрес</h5>
+                                                    <p>Тенгиз Тауэрс 30а/3</p>
+                                                    <p>Алматы</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h5>Телефон</h5>
+                                                    <p>+7 (727) 221 61 41</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h5>email</h5>
+                                                    <p>info@niyet.kz</p>
+                                                </div>
+                                                <div class="col-md-3 text-right">
+                                                    <div class="footer-social-icons">
+                                                        <a href="#"><img src="./images/fb.png" alt="facebook"></a>
+                                                        <a href="#"><img src="./images/inst.png" alt="instagram"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Footer end -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="./dist/js/img-to-svg.js"></script>
+<!--<script src="./dist/js/mobile-menu.js"></script>-->
+</html>

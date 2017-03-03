@@ -1,0 +1,22 @@
+.profile-header{
+  margin-bottom: 45px;
+}
+.profile-nav{
+  margin: 160px 0 70px 0;
+  ul{
+    li{
+      margin-bottom: 15px;
+      &.active{
+        a{
+          color: $color-black;
+        }
+      }
+      a{
+        font-size: 18px;
+        font-family: hypatia-bold;
+        color: $color-gray;
+        display: block;
+      }
+    }
+  }
+}

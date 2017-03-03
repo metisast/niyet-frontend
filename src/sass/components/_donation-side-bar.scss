@@ -1,0 +1,46 @@
+// Donation Side Bar
+.donation-side-bar{
+  background: $bg-green-dark;
+  padding: 30px;
+  color: $color-white;
+  margin-bottom: 30px;
+  h3{
+    margin: 0 0 30px 0;
+  }
+  > p{
+    color: $color-white;
+  }
+  .donation-sum{
+    min-height: 270px;
+    .donation-sum-table{
+      width: 100%;
+      tbody {
+        tr {
+          td {
+            padding-bottom: 15px;
+            p {
+              color: $color-white;
+            }
+            &:nth-child(2) {
+              text-align: right;
+            }
+          }
+        }
+      }
+      tfoot{
+        tr {
+          td {
+            padding-top: 15px;
+            p {
+              color: $color-white;
+              font-family: hypatia-bold;
+            }
+            &:nth-child(2) {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -59,6 +59,10 @@ a,p,span{
   margin: 0;
 }
 input{
+  color: $color-black !important;
+  padding: 10px 15px;
+  font-family: $hypatia-regular !important;
+  font-size: 18px !important;
   &:focus{
     outline: none;
   }

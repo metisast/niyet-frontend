@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./dist/css/niyet.css">
+    <link href="./dist/css/iCheck/skins/all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid" id="wrapper">
+        <section>
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <!-- Header start -->
+                    <div class="container-fluid">
+                        <div id="header">
+                            <!-- Desktop nav -->
+                            <div class="desktop-header">
+                                <div class="row no-gutters hidden-md-down">
+                                    <div class="col-md-5">
+                                        <nav class="top-navigation">
+                                            <ul>
+                                                <li><a href="index.html">О фонде</a></li>
+                                                <li><a href="index2.html">Наша работа</a></li>
+                                                <li><a href="index3.html">Как помочь</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-2 text-center">
+                                        <div class="logo-top text-center">
+                                            <a href="#">
+                                                <img src="./images/svg/logo_niyet.svg" alt="logo-niyet" width="140">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="top-auth-links text-right">
+                                            <a href="#" class="btn btn-help">
+                                                <img class="svg icon fill-red" src="./images/svg/button_heart.svg">Помочь
+                                            </a>
+                                            <a href="./sign-in.html" class="btn btn-sign-in active">
+                                                <img class="svg icon fill-green" src="./images/svg/button_lock.svg">Кабинет
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile nav -->
+                            <div class="row no-gutters hidden-lg-up">
+                                <div class="col-12">
+                                    <div class="mobile-header">
+                                        <div class="row no-gutters">
+                                            <div class="col-5"></div>
+                                            <div class="col-2 text-center">
+                                                <div class="mobile-logo">
+                                                    <a href="#">
+                                                        <img src="./images/svg/logo_small.svg" alt="logo-niyet" width="60">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 text-right">
+                                                <div class="mobile-bars">
+                                                    <a id="hamburger-icon" href="#" title="Menu">
+                                                        <span class="line line-1"></span>
+                                                        <span class="line line-2"></span>
+                                                        <span class="line line-3"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <nav class="mobile-nav text-center">
+                                                    <ul>
+                                                        <li><a href="#" class="active">О фонде</a></li>
+                                                        <li><a href="#" class="active">Наша работа</a></li>
+                                                        <li><a href="#" class="active">Как помочь</a></li>
+                                                    </ul>
+                                                    <div class="mobile-auth-links">
+                                                        <a href="#" class="btn btn-help">
+                                                            <img class="svg icon fill-red" src="./images/svg/button_heart.svg">Помочь
+                                                        </a>
+                                                        <a href="#" class="btn btn-sign-in">
+                                                            <img class="svg icon fill-green" src="./images/svg/button_lock.svg">Войти
+                                                        </a>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Header end -->
+                    </div>
+                    <!-- Sign in start -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="cabinet">
+                                    <div class="row">
+                                        <!-- Breadcrumbs start -->
+                                        <div class="col-md-12">
+                                            <div class="breadcrumbs">
+                                                <a href="#" class="mute">Личный кабинет</a>
+                                                <span> – Дети</span>
+                                            </div>
+                                        </div><!-- Breadcrumbs end -->
+                                        <!-- Side bar -->
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <!-- Nav start -->
+                                                <div class="col-md-12">
+                                                    <nav class="profile-nav">
+                                                        <ul>
+                                                            <li class="active"><a href="#">Дети</a></li>
+                                                            <li><a href="#">История</a></li>
+                                                            <li><a href="#">Личные данные</a></li>
+                                                            <li><a href="#">Выйти</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </div><!-- Nav end -->
+                                                <!-- Donation sum start -->
+                                                <div class="col-md-12">
+                                                    <div class="donation-side-bar">
+                                                        <h3>Ваша помощь</h3>
+                                                        <p class="hidden-sm-up">Выберите сумму для помощи тем детям, которым хотите помочь.</p>
+                                                        <div class="donation-sum">
+                                                            <table class="donation-sum-table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><p>Cания</p></td>
+                                                                        <td><p>30 000 тг.</p></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><p>Малика</p></td>
+                                                                        <td><p>20 000 тг.</p></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><p>Санжар</p></td>
+                                                                        <td><p>20 000 тг.</p></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><p>Малика</p></td>
+                                                                        <td><p>25 000 тг.</p></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><p>Аноним</p></td>
+                                                                        <td><p>35 000 тг.</p></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <td><p>Итого</p></td>
+                                                                        <td><p>130 000 тг.</p></td>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table>
+                                                        </div>
+                                                        <div class="donation-done text-center">
+                                                            <a href="./sign-in.html" class="btn btn-help btn-full">
+                                                                <img class="svg icon fill-red" src="./images/svg/button_heart.svg">Помочь
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- Donation sum end -->
+                                                <div class="col-md-12">
+                                                    <div class="donation-simple text-center">
+                                                        <p>или выберите сумму для перевода на счёт фонда</p>
+                                                        <form action="" method="post" id="donation-simple-form">
+                                                            <div class="input-group">
+                                                                <input type="text" name="donation-simple" class="form-control">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn" type="button">Перевести</button>
+                                                                </span>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- Side bar end -->
+                                        <!-- Children cards start -->
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="profile-header">
+                                                        <h1>Ваша помощь имеет значение</h1>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="children-card">
+                                                        <div class="row">
+                                                            <!-- Item 1 -->
+                                                            <div class="col-md-4">
+                                                                <div class="children-card-item text-center">
+                                                                    <div class="children-card-pic bg-light-pink"></div>
+                                                                    <div class="children-card-info">
+                                                                        <h2>Сания</h2>
+                                                                        <span>9 лет, сирота</span>
+                                                                    </div>
+                                                                    <div class="children-card-donate">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate1">
+                                                                                        <span> 15 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate1">
+                                                                                        <span> 20 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate1">
+                                                                                        <span> 25 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate1">
+                                                                                        <span> 30 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate1">
+                                                                                        <span> 35 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="children-card-donate-cancel">
+                                                                                    <p>Отмена</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Item 2 -->
+                                                            <div class="col-md-4">
+                                                                <div class="children-card-item text-center">
+                                                                    <div class="children-card-pic bg-green-light"></div>
+                                                                    <div class="children-card-info">
+                                                                        <h2>Малика</h2>
+                                                                        <span>4 года, многодетная семья</span>
+                                                                    </div>
+                                                                    <div class="children-card-donate">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate2">
+                                                                                        <span> 15 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate2">
+                                                                                        <span> 20 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate2">
+                                                                                        <span> 25 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate2">
+                                                                                        <span> 30 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate2">
+                                                                                        <span> 35 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="children-card-donate-cancel">
+                                                                                    <p>Отмена</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Item 3 -->
+                                                            <div class="col-md-4">
+                                                                <div class="children-card-item text-center">
+                                                                    <div class="children-card-pic bg-gray"></div>
+                                                                    <div class="children-card-info">
+                                                                        <h2>Аноним</h2>
+                                                                        <span>5 лет, ребёнок-инвалид</span>
+                                                                    </div>
+                                                                    <div class="children-card-donate">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate3">
+                                                                                        <span> 15 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate3">
+                                                                                        <span> 20 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate3">
+                                                                                        <span> 25 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate3">
+                                                                                        <span> 30 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate3">
+                                                                                        <span> 35 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="children-card-donate-cancel">
+                                                                                    <p>Отмена</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Item 4 -->
+                                                            <div class="col-md-4">
+                                                                <div class="children-card-item text-center">
+                                                                    <div class="children-card-pic bg-green-light"></div>
+                                                                    <div class="children-card-info">
+                                                                        <h2>Константин</h2>
+                                                                        <span>9 месяцев, ребёнок-инвалид</span>
+                                                                    </div>
+                                                                    <div class="children-card-donate">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate4">
+                                                                                        <span> 15 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate4">
+                                                                                        <span> 20 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate4">
+                                                                                        <span> 25 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate4">
+                                                                                        <span> 30 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="form-check">
+                                                                                    <label>
+                                                                                        <input class="form-check-input" type="radio" value="" name="donate4">
+                                                                                        <span> 35 000 тг.</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="children-card-donate-cancel">
+                                                                                    <p>Отмена</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- Children cards end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Sign in end -->
+                    <!-- Footer start -->
+                    <div class="container-fluid">
+                        <div class="footer mb-6">
+                            <div class="row">
+                                <div class="col-12 mt-6">
+                                    <div class="footer-content">
+                                        <div class="footer-subscribe">
+                                            <form action="">
+                                                <input type="text" placeholder="Подпишитесь на нашу рассылку">
+                                            </form>
+                                        </div>
+                                        <div class="footer-items">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <h5>Адрес</h5>
+                                                    <p>Тенгиз Тауэрс 30а/3</p>
+                                                    <p>Алматы</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h5>Телефон</h5>
+                                                    <p>+7 (727) 221 61 41</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h5>email</h5>
+                                                    <p>info@niyet.kz</p>
+                                                </div>
+                                                <div class="col-md-3 text-right">
+                                                    <div class="footer-social-icons">
+                                                        <a href="#"><img src="./images/fb.png" alt="facebook"></a>
+                                                        <a href="#"><img src="./images/inst.png" alt="instagram"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Footer end -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="./dist/js/img-to-svg.js"></script>
+<script src="./dist/js/icheck.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-red',
+            radioClass: 'iradio_square-green',
+            increaseArea: '50%' // optional
+        });
+
+        $('input').on('ifChecked', function(){
+            $(this).parent().parent().find('span').css('color', '#000');
+        });
+        $('input').on('ifUnchecked', function(){
+            $(this).parent().parent().find('span').css('color', '#808080');
+        });
+        $('.children-card-donate-cancel').click(function () {
+            $(this).parent().parent().find('input').iCheck('uncheck');
+        });
+    });
+</script>
+<!--<script src="./dist/js/mobile-menu.js"></script>-->
+</html>

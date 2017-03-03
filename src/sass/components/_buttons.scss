@@ -5,18 +5,36 @@
   font-family: $hypatia-bold;
   color: $color-black;
   font-size: 18px;
+  border: none;
+  background: $bg-white;
+  cursor: pointer;
+  &.active{
+    color: $color-white !important;
+    .fill-green{
+      fill: $color-white !important;
+    }
+  }
   @include transition($transition-ease);
   &.btn-bordered{
     outline: 2px solid $color-black;
     outline-offset: -2px;
+  }
+  &.btn-full{
+    width: 100% !important;
+    display: inline-block;
   }
   &.btn-help, &.btn-sign-in, &.btn-primary{
     &:hover{
       color: $color-white;
     }
   }
-  &.btn-sign-in:hover{
-    background: $bg-green;
+  &.btn-sign-in{
+    &:hover{
+      background: $bg-green;
+    }
+    &.active{
+      background: $bg-green;
+    }
   }
   &.btn-help:hover{
     background: $bg-red;

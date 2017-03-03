@@ -1,0 +1,23 @@
+// Advanced bootstrap forms
+.form-group{
+  margin-bottom: 25px;
+  label{
+    color: $color-black-secondary;
+  }
+  input{
+    &.text-danger{
+      color: $color-red;
+      @include placeholder{
+        color: $color-red;
+      }
+    }
+  }
+}
+.form-control{
+  border-radius: 0;
+  border-color: $bg-gray-input;
+  background: $bg-gray-input;
+  &:focus{
+    background: $bg-gray-input;
+  }
+}

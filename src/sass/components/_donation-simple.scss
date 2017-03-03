@@ -1,0 +1,19 @@
+// Donation simple
+.donation-simple{
+  > p{
+    margin-bottom: 10px;
+  }
+}
+#donation-simple-form{
+  .input-group{
+    border: 1px solid #636567;
+    input{
+      background: $bg-white;
+      text-align: center;
+    }
+    .input-group-btn button{
+      background: #636567;
+      color: $color-white;
+    }
+  }
+}

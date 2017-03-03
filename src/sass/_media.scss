@@ -16,7 +16,10 @@ $large: 1300px;
   @else if $media == medium-screen {
     @media only screen and (min-width: $small + 1) and (max-width: $medium - 1) { @content; }
   }
-  @else if $media == large-screens {
+  @else if $media == large-screen {
+    @media only screen and (min-width: $medium + 1) and (max-width: $large - 1) { @content; }
+  }
+  @else if $media == big-screen {
     @media only screen and (min-width: $large) { @content; }
   }
 }

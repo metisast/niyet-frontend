@@ -9,14 +9,36 @@
 html{
 
 }
-body {
+body{
   background-color: $main-bg;
   font-family: $hypatia-regular;
   padding: 0 2%;
+  @include respond-to(extra-small-screen){
+    padding: 0;
+  }
+  @include respond-to(small-screen){
+    padding: 0;
+  }
 }
 h1,h2,h3,h4,h5,h6{
   font-family: $hypatia-bold;
   margin-bottom: 0;
+}
+h1{
+  @include respond-to(extra-small-screen){
+    font-size: 36px;
+  }
+  @include respond-to(small-screen){
+    font-size: 36px;
+  }
+}
+h2{
+  @include respond-to(extra-small-screen){
+    font-size: 28px;
+  }
+  @include respond-to(small-screen){
+    font-size: 28px;
+  }
 }
 ul{
   list-style: none;
@@ -39,5 +61,13 @@ a,p,span{
 input{
   &:focus{
     outline: none;
+  }
+}
+.display-4{
+  @include respond-to(extra-small-screen){
+    font-size: 44px;
+  }
+  @include respond-to(small-screen){
+    font-size: 52px;
   }
 }

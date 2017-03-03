@@ -20,10 +20,30 @@ body {
   background-color: #f8f8f8;
   font-family: "hypatia-regular";
   padding: 0 2%; }
+  @media only screen and (max-width: 544px) {
+    body {
+      padding: 0; } }
+  @media only screen and (min-width: 545px) and (max-width: 767px) {
+    body {
+      padding: 0; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "hypatia-bold";
   margin-bottom: 0; }
+
+@media only screen and (max-width: 544px) {
+  h1 {
+    font-size: 36px; } }
+@media only screen and (min-width: 545px) and (max-width: 767px) {
+  h1 {
+    font-size: 36px; } }
+
+@media only screen and (max-width: 544px) {
+  h2 {
+    font-size: 28px; } }
+@media only screen and (min-width: 545px) and (max-width: 767px) {
+  h2 {
+    font-size: 28px; } }
 
 ul {
   list-style: none;
@@ -35,7 +55,7 @@ a {
   color: #000; }
 
 p {
-  color: #666666;
+  color: #404040;
   line-height: 1.4;
   font-size: 18px; }
 
@@ -46,8 +66,21 @@ a, p, span {
 input:focus {
   outline: none; }
 
+@media only screen and (max-width: 544px) {
+  .display-4 {
+    font-size: 44px; } }
+@media only screen and (min-width: 545px) and (max-width: 767px) {
+  .display-4 {
+    font-size: 52px; } }
+
 #wrapper {
   background-color: #fff; }
+  @media only screen and (max-width: 544px) {
+    #wrapper {
+      padding: 0; } }
+  @media only screen and (min-width: 545px) and (max-width: 767px) {
+    #wrapper {
+      padding: 0; } }
   #wrapper > section {
     padding: 0 35px; }
     @media only screen and (max-width: 544px) {
@@ -56,6 +89,23 @@ input:focus {
     @media only screen and (min-width: 545px) and (max-width: 767px) {
       #wrapper > section {
         padding: 0; } }
+
+#header {
+  position: relative;
+  height: 130px;
+  width: 100%; }
+  @media only screen and (max-width: 544px) {
+    #header {
+      height: 60px; } }
+  @media only screen and (min-width: 545px) and (max-width: 767px) {
+    #header {
+      height: 30px; } }
+  #header .desktop-header {
+    width: 90%;
+    position: fixed;
+    left: 5%;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.8); }
 
 .top-navigation {
   margin-top: 68px; }
@@ -86,6 +136,63 @@ input:focus {
   .top-auth-links .btn {
     margin-left: 20px; }
 
+.mobile-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 100; }
+  .mobile-header .mobile-logo {
+    line-height: 0; }
+  .mobile-header .mobile-nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    height: 100%; }
+
+#hamburger-icon {
+  width: 25px;
+  height: 16px;
+  position: relative;
+  display: inline-block;
+  margin: 20px 30px 0 0; }
+  #hamburger-icon .line {
+    display: block;
+    background: #404040;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    border-radius: 1px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s; }
+    #hamburger-icon .line.line-1 {
+      top: 0; }
+    #hamburger-icon .line.line-2 {
+      top: 50%; }
+    #hamburger-icon .line.line-3 {
+      top: 100%; }
+  #hamburger-icon:hover .line-1, #hamburger-icon:focus .line-1 {
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px); }
+  #hamburger-icon:hover .line-3, #hamburger-icon:focus .line-3 {
+    transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px); }
+  #hamburger-icon.active .line-1 {
+    transform: translateY(8px) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(8px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(8px) translateX(0) rotate(45deg); }
+  #hamburger-icon.active .line-2 {
+    opacity: 0; }
+  #hamburger-icon.active .line-3 {
+    transform: translateY(-8px) translateX(0) rotate(-45deg);
+    -webkit-transform: translateY(-8px) translateX(0) rotate(-45deg);
+    -moz-transform: translateY(-8px) translateX(0) rotate(-45deg); }
+
 .main-title h1, .main-title p {
   font-family: "hypatia-bold"; }
 .main-title p {
@@ -93,6 +200,12 @@ input:focus {
 
 .main-title-pic {
   margin-top: -290px; }
+  @media only screen and (max-width: 544px) {
+    .main-title-pic {
+      margin-top: -90px; } }
+  @media only screen and (min-width: 545px) and (max-width: 767px) {
+    .main-title-pic {
+      margin-top: -90px; } }
 
 .sub-content .title {
   color: #000;
@@ -120,18 +233,42 @@ input:focus {
 .principle-card .principle-card-text {
   position: relative;
   background: #fff;
-  height: 320px;
   margin-top: 30px;
   overflow: hidden;
+  padding: 30px 0;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 544px) {
+    .principle-card .principle-card-text {
+      margin-top: 0; } }
+  @media only screen and (min-width: 545px) and (max-width: 767px) {
+    .principle-card .principle-card-text {
+      margin-top: 0; } }
+  @media only screen and (min-width: 769px) and (max-width: 991px) {
+    .principle-card .principle-card-text {
+      margin-top: 0; } }
+  @media only screen and (min-width: 993px) and (max-width: 1299px) {
+    .principle-card .principle-card-text {
+      margin-top: 0; } }
   .principle-card .principle-card-text h2, .principle-card .principle-card-text p {
     position: relative;
     padding: 0 100px;
     z-index: 2; }
+    @media only screen and (max-width: 544px) {
+      .principle-card .principle-card-text h2, .principle-card .principle-card-text p {
+        padding: 0 30px; } }
+    @media only screen and (min-width: 545px) and (max-width: 767px) {
+      .principle-card .principle-card-text h2, .principle-card .principle-card-text p {
+        padding: 0 30px; } }
+    @media only screen and (min-width: 769px) and (max-width: 991px) {
+      .principle-card .principle-card-text h2, .principle-card .principle-card-text p {
+        padding: 0 45px; } }
+    @media only screen and (min-width: 993px) and (max-width: 1299px) {
+      .principle-card .principle-card-text h2, .principle-card .principle-card-text p {
+        padding: 0 45px; } }
   .principle-card .principle-card-text h2 {
     margin-top: 0; }
   .principle-card .principle-card-text .card-number {
@@ -144,6 +281,8 @@ input:focus {
     bottom: 0; }
     .principle-card .principle-card-text .card-number.right {
       right: -5px; }
+.principle-card .principle-card-pic {
+  line-height: 0; }
 
 .news {
   margin-top: -240px; }
@@ -268,7 +407,7 @@ input:focus {
       margin-top: 0;
       padding-left: 120px;
       font-family: "hypatia-regular";
-      color: #666666;
+      color: #404040;
       line-height: 1.5; }
 
 .reports {
@@ -338,7 +477,7 @@ input:focus {
   padding-bottom: 10px;
   font-family: "hypatia-bold";
   text-transform: uppercase;
-  color: #666666;
+  color: #404040;
   width: 100%; }
 .footer .footer-items h5 {
   text-transform: uppercase; }
@@ -415,12 +554,27 @@ input:focus {
 
 .hidden-290 {
   height: 290px; }
+  @media only screen and (max-width: 544px) {
+    .hidden-290 {
+      height: 90px; } }
+  @media only screen and (min-width: 545px) and (max-width: 767px) {
+    .hidden-290 {
+      height: 90px; } }
 
 .hidden-100 {
   height: 0; }
 
 .m-l-minus-100 {
   margin-left: -100px; }
+  @media only screen and (max-width: 544px) {
+    .m-l-minus-100 {
+      margin-left: 0; } }
+  @media only screen and (min-width: 545px) and (max-width: 767px) {
+    .m-l-minus-100 {
+      margin-left: 0; } }
+  @media only screen and (min-width: 769px) and (max-width: 991px) {
+    .m-l-minus-100 {
+      margin-left: 0; } }
 
 .m-l-minus-85 {
   margin-left: -85px; }

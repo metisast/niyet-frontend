@@ -9,4 +9,10 @@
 }
 .main-title-pic{
   margin-top: -290px;
+  @include respond-to(extra-small-screen){
+    margin-top: -90px;
+  }
+  @include respond-to(small-screen){
+    margin-top: -90px;
+  }
 }

@@ -1,6 +1,21 @@
 // Header
 #header{
-  //margin-bottom: $m-b-large;
+  position: relative;
+  height: 130px;
+  width: 100%;
+  @include respond-to(extra-small-screen){
+    height: 60px;
+  }
+  @include respond-to(small-screen){
+    height: 30px;
+  }
+  .desktop-header{
+    width: 90%;
+    position: fixed;
+    left: 5%;
+    z-index: 100;
+    background: $bg-white-alpha-80;
+  }
 }
 // Top navigation
 .top-navigation{

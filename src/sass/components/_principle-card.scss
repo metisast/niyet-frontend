@@ -4,14 +4,38 @@
   .principle-card-text{
     position: relative;
     background: $bg-white;
-    height: 320px;
     margin-top: 30px;
     overflow: hidden;
+    padding: 30px 0;
+    @include respond-to(extra-small-screen){
+      margin-top: 0;
+    }
+    @include respond-to(small-screen){
+      margin-top: 0;
+    }
+    @include respond-to(medium-screen){
+      margin-top: 0;
+    }
+    @include respond-to(large-screen){
+      margin-top: 0;
+    }
     @include box-shadow($box-shadow-card);
     h2, p{
       position: relative;
       padding: 0 100px;
       z-index: 2;
+      @include respond-to(extra-small-screen){
+        padding: 0 30px;
+      }
+      @include respond-to(small-screen){
+        padding: 0 30px;
+      }
+      @include respond-to(medium-screen){
+        padding: 0 45px;
+      }
+      @include respond-to(large-screen){
+        padding: 0 45px;
+      }
     }
     h2{
       margin-top: 0;
@@ -30,6 +54,6 @@
     }
   }
   .principle-card-pic{
-
+    line-height: 0;
   }
 }

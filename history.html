@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./dist/css/niyet.css">
+    <link href="./dist/css/iCheck/skins/all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid" id="wrapper">
+        <section>
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <!-- Header start -->
+                    <div class="container-fluid">
+                        <div id="header">
+                            <!-- Desktop nav -->
+                            <div class="desktop-header">
+                                <div class="row no-gutters hidden-md-down">
+                                    <div class="col-md-5">
+                                        <nav class="top-navigation">
+                                            <ul>
+                                                <li><a href="index.html">О фонде</a></li>
+                                                <li><a href="index2.html">Наша работа</a></li>
+                                                <li><a href="index3.html">Как помочь</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-2 text-center">
+                                        <div class="logo-top text-center">
+                                            <a href="#">
+                                                <img src="./images/svg/logo_niyet.svg" alt="logo-niyet" width="140">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="top-auth-links text-right">
+                                            <a href="#" class="btn btn-help">
+                                                <img class="svg icon fill-red" src="./images/svg/button_heart.svg">Помочь
+                                            </a>
+                                            <a href="./sign-in.html" class="btn btn-sign-in active">
+                                                <img class="svg icon fill-green" src="./images/svg/button_lock.svg">Кабинет
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile nav -->
+                            <div class="row no-gutters hidden-lg-up">
+                                <div class="col-12">
+                                    <div class="mobile-header">
+                                        <div class="row no-gutters">
+                                            <div class="col-5"></div>
+                                            <div class="col-2 text-center">
+                                                <div class="mobile-logo">
+                                                    <a href="#">
+                                                        <img src="./images/svg/logo_small.svg" alt="logo-niyet" width="60">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 text-right">
+                                                <div class="mobile-bars">
+                                                    <a id="hamburger-icon" href="#" title="Menu">
+                                                        <span class="line line-1"></span>
+                                                        <span class="line line-2"></span>
+                                                        <span class="line line-3"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <nav class="mobile-nav text-center">
+                                                    <ul>
+                                                        <li><a href="#" class="active">О фонде</a></li>
+                                                        <li><a href="#" class="active">Наша работа</a></li>
+                                                        <li><a href="#" class="active">Как помочь</a></li>
+                                                    </ul>
+                                                    <div class="mobile-auth-links">
+                                                        <a href="#" class="btn btn-help">
+                                                            <img class="svg icon fill-red" src="./images/svg/button_heart.svg">Помочь
+                                                        </a>
+                                                        <a href="#" class="btn btn-sign-in">
+                                                            <img class="svg icon fill-green" src="./images/svg/button_lock.svg">Войти
+                                                        </a>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Header end -->
+                    </div>
+                    <!-- History start -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="cabinet">
+                                    <div class="row">
+                                        <!-- Breadcrumbs start -->
+                                        <div class="col-md-12">
+                                            <div class="breadcrumbs">
+                                                <a href="#" class="mute">Личный кабинет</a>
+                                                <span> – Дети</span>
+                                            </div>
+                                        </div><!-- Breadcrumbs end -->
+                                        <!-- Side bar -->
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <!-- Nav start -->
+                                                <div class="col-md-12">
+                                                    <nav class="profile-nav">
+                                                        <ul>
+                                                            <li><a href="./children.html">Дети</a></li>
+                                                            <li class="active"><a href="./history.html">История</a></li>
+                                                            <li><a href="#">Личные данные</a></li>
+                                                            <li><a href="#">Выйти</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </div><!-- Nav end -->
+                                            </div>
+                                        </div><!-- Side bar end -->
+                                        <!-- History table start -->
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="profile-header">
+                                                        <h1>История вашей помощи</h1>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="history">
+                                                        <table class="history-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Дата</th>
+                                                                    <th>ID операции</th>
+                                                                    <th>Получивший помощь</th>
+                                                                    <th>Пожертвование</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <!-- Item 1 -->
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="history-table-date">
+                                                                        <p>10</p>
+                                                                        <p>Фев</p>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="history-table-status-pic float-left">
+                                                                            <img src="images/processing.png" alt="processing">
+                                                                        </div>
+                                                                        <div class="history-table-status-text float-left">
+                                                                            <p>1912826</p>
+                                                                            <span>обрабатывается</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="history-table-ben">
+                                                                        <p>Михаил Иванов</p>
+                                                                        <span>сирота</span>
+                                                                    </td>
+                                                                    <td class="history-table-donation">
+                                                                        <p>20 000 тг.</p>
+                                                                        <span>Продуктовая корзина</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!-- Item 2 -->
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="history-table-date">
+                                                                        <p>10</p>
+                                                                        <p>Фев</p>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="history-table-status-pic float-left">
+                                                                            <img src="images/checked.png" alt="checked">
+                                                                        </div>
+                                                                        <div class="history-table-status-text float-left">
+                                                                            <p>1687096</p>
+                                                                            <span>принят</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="history-table-ben">
+                                                                        <p>Сания Кассимова</p>
+                                                                        <span>многодетная семья</span>
+                                                                    </td>
+                                                                    <td class="history-table-donation">
+                                                                        <p>15 000 тг.</p>
+                                                                        <span>Продуктовая корзина</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!-- Item 3 -->
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="history-table-date">
+                                                                        <p>04</p>
+                                                                        <p>Янв</p>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="history-table-status-pic float-left">
+                                                                            <img src="images/cancel.png" alt="cancel">
+                                                                        </div>
+                                                                        <div class="history-table-status-text float-left">
+                                                                            <p>1687096</p>
+                                                                            <span>отменён</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="history-table-ben">
+                                                                        <p>Александр Севастьянов</p>
+                                                                        <span>малообеспеченная семья</span>
+                                                                    </td>
+                                                                    <td class="history-table-donation">
+                                                                        <p>20 000 тг.</p>
+                                                                        <span>Продуктовая корзина</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!-- Item 4 -->
+                                                            <tbody>
+                                                            <tr>
+                                                                <td class="history-table-date">
+                                                                    <p>16</p>
+                                                                    <p>Дек</p>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="history-table-status-pic float-left">
+                                                                        <img src="images/checked.png" alt="checked">
+                                                                    </div>
+                                                                    <div class="history-table-status-text float-left">
+                                                                        <p>1912826</p>
+                                                                        <span>принят</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="history-table-ben">
+                                                                    <p>Зейнолла Каракалпакулы</p>
+                                                                    <span>многодетная семья</span>
+                                                                </td>
+                                                                <td class="history-table-donation">
+                                                                    <p>35 000 тг.</p>
+                                                                    <span>Продуктовая корзина</span>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- Children cards end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- History end -->
+                    <!-- Footer start -->
+                    <div class="container-fluid">
+                        <div class="footer mb-6">
+                            <div class="row">
+                                <div class="col-12 mt-6">
+                                    <div class="footer-content">
+                                        <div class="footer-subscribe">
+                                            <form action="">
+                                                <input type="text" placeholder="Подпишитесь на нашу рассылку">
+                                            </form>
+                                        </div>
+                                        <div class="footer-items">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <h5>Адрес</h5>
+                                                    <p>Тенгиз Тауэрс 30а/3</p>
+                                                    <p>Алматы</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h5>Телефон</h5>
+                                                    <p>+7 (727) 221 61 41</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <h5>email</h5>
+                                                    <p>info@niyet.kz</p>
+                                                </div>
+                                                <div class="col-md-3 text-right">
+                                                    <div class="footer-social-icons">
+                                                        <a href="#"><img src="./images/fb.png" alt="facebook"></a>
+                                                        <a href="#"><img src="./images/inst.png" alt="instagram"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- Footer end -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="./dist/js/img-to-svg.js"></script>
+<script src="./dist/js/icheck.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-red',
+            radioClass: 'iradio_square-green',
+            increaseArea: '50%' // optional
+        });
+
+        $('input').on('ifChecked', function(){
+            $(this).parent().parent().find('span').css('color', '#000');
+        });
+        $('input').on('ifUnchecked', function(){
+            $(this).parent().parent().find('span').css('color', '#808080');
+        });
+        $('.children-card-donate-cancel').click(function () {
+            $(this).parent().parent().find('input').iCheck('uncheck');
+        });
+    });
+</script>
+<!--<script src="./dist/js/mobile-menu.js"></script>-->
+</html>

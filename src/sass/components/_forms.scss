@@ -3,6 +3,8 @@
   margin-bottom: 25px;
   label{
     color: $color-black-secondary;
+    display: inline-block;
+    margin-bottom: 5px;
   }
   input{
     &.text-danger{

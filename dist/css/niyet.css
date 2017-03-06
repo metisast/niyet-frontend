@@ -29,7 +29,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "hypatia-bold";
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  color: #0a121a; }
 
 @media only screen and (max-width: 544px) {
   h1 {
@@ -52,10 +53,10 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000; }
+  color: #0a121a; }
 
 p {
-  color: #404040;
+  color: #6d6f73;
   line-height: 1.4;
   font-size: 18px; }
 
@@ -63,8 +64,11 @@ a, p, span {
   /*font-size: $font-size-regular;*/
   margin: 0; }
 
+span {
+  color: #6d6f73; }
+
 input {
-  color: #000 !important;
+  color: #0a121a !important;
   padding: 10px 15px;
   font-family: "hypatia-regular" !important;
   font-size: 18px !important; }
@@ -81,6 +85,9 @@ input {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.tooltip_templates {
+  display: none; }
 
 #wrapper {
   background-color: #fff; }
@@ -131,9 +138,9 @@ table {
         content: '';
         width: 62px;
         height: 4px;
-        background: #000;
+        background: #0a121a;
         position: absolute;
-        border-bottom: 4px solid #000;
+        border-bottom: 4px solid #0a121a;
         bottom: 0;
         left: 0; }
 
@@ -168,7 +175,7 @@ table {
   margin: 20px 30px 0 0; }
   #hamburger-icon .line {
     display: block;
-    background: #404040;
+    background: #6d6f73;
     width: 25px;
     height: 2px;
     position: absolute;
@@ -205,7 +212,7 @@ table {
 .main-title h1, .main-title p {
   font-family: "hypatia-bold"; }
 .main-title p {
-  color: #000; }
+  color: #0a121a; }
 
 .main-title-pic {
   margin-top: -290px; }
@@ -217,7 +224,7 @@ table {
       margin-top: -90px; } }
 
 .sub-content .title {
-  color: #000;
+  color: #0a121a;
   font-family: "hypatia-bold"; }
 .sub-content .divider {
   height: 2px; }
@@ -295,6 +302,12 @@ table {
 
 .news {
   margin-top: -240px; }
+  @media only screen and (max-width: 544px) {
+    .news {
+      margin-top: -60px; } }
+  @media only screen and (min-width: 545px) and (max-width: 767px) {
+    .news {
+      margin-top: -60px; } }
   .news .row-sub {
     column-count: 4;
     column-width: 20em;
@@ -349,11 +362,11 @@ table {
       content: '';
       width: 2px;
       height: 80px;
-      background: #000;
+      background: #0a121a;
       left: 20px;
       top: -65px; }
     .news .news-date p {
-      color: #000; }
+      color: #0a121a; }
   .news .news-read-more {
     padding-bottom: 30px; }
     .news .news-read-more a {
@@ -389,7 +402,7 @@ table {
       .news .btn-news-load .btn-news-load-text p {
         font-family: "hypatia-bold";
         text-transform: uppercase;
-        color: #000;
+        color: #0a121a;
         font-size: 14px; }
 
 .volunteer-card .volunteer-card-item {
@@ -402,7 +415,7 @@ table {
       width: 100%; }
     .volunteer-card .volunteer-card-item .volunteer-card-photo p {
       font-family: "hypatia-bold";
-      color: #000;
+      color: #0a121a;
       margin-top: 10px;
       font-size: 14px; }
   .volunteer-card .volunteer-card-item .volunteer-text {
@@ -416,7 +429,7 @@ table {
       margin-top: 0;
       padding-left: 120px;
       font-family: "hypatia-regular";
-      color: #404040;
+      color: #6d6f73;
       line-height: 1.5; }
 
 .reports {
@@ -425,7 +438,7 @@ table {
     position: relative;
     margin-bottom: 80px; }
     .reports .report-item:hover .report-border svg {
-      fill: #000; }
+      fill: #0a121a; }
     .reports .report-item:hover .report-glasses svg {
       fill: #fff; }
     .reports .report-item .report-border svg {
@@ -435,7 +448,7 @@ table {
       -o-transition: all 0.2s ease;
       transition: all 0.2s ease;
       transform: scale(1.4);
-      stroke: #000;
+      stroke: #0a121a;
       fill: #fff;
       stroke-width: 3px; }
     .reports .report-item .report-glasses {
@@ -447,10 +460,10 @@ table {
         -ms-transition: all 0.2s ease;
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
-        fill: #000; }
+        fill: #0a121a; }
     .reports .report-item .report-title p {
       font-family: "hypatia-bold";
-      color: #000; }
+      color: #0a121a; }
 
 .simple-pic {
   position: relative; }
@@ -473,7 +486,7 @@ table {
         content: '';
         width: 2px;
         height: 50%;
-        background: #000;
+        background: #0a121a;
         left: 32px; }
     .help-desc .help-desc-item:nth-child(1) .help-desc-number div {
       height: 20px; }
@@ -484,11 +497,11 @@ table {
   margin-bottom: 45px; }
 
 .profile-nav {
-  margin: 160px 0 70px 0; }
+  margin: 135px 0 70px 0; }
   .profile-nav ul li {
     margin-bottom: 15px; }
     .profile-nav ul li.active a {
-      color: #000; }
+      color: #0a121a; }
     .profile-nav ul li a {
       font-size: 18px;
       font-family: hypatia-bold;
@@ -498,13 +511,18 @@ table {
 .profile-password h3 {
   margin: 45px 0 15px 0; }
 
+.profile-form .form-group span {
+  display: inline-block;
+  margin: 0 0 0 5px; }
+
 .donation-side-bar {
-  background: #0d7268;
+  background: #104368;
   padding: 30px;
   color: #fff;
   margin-bottom: 30px; }
   .donation-side-bar h3 {
-    margin: 0 0 30px 0; }
+    margin: 0 0 30px 0;
+    color: #fff; }
   .donation-side-bar > p {
     color: #fff; }
   .donation-side-bar .donation-sum {
@@ -572,7 +590,7 @@ table {
       font-size: 13px;
       color: #616367; }
     .history-table tbody td .history-table-status-pic {
-      padding-right: 5px; }
+      padding-right: 10px; }
     .history-table tbody td .history-table-status-text {
       padding-top: 5px; }
 
@@ -583,11 +601,18 @@ table {
     color: #616367; }
     .zakiyat .zakiyat-content p strong {
       font-family: "hypatia-bold";
-      color: #000; }
+      color: #0a121a; }
 .zakiyat .zakiyat-donation-item {
   margin-bottom: 20px; }
   .zakiyat .zakiyat-donation-item h3 {
     margin-bottom: 20px; }
+    .zakiyat .zakiyat-donation-item h3 i {
+      font-family: "hypatia-black";
+      font-style: normal;
+      color: #1781e0;
+      font-size: 24px;
+      margin-left: 18px;
+      cursor: pointer; }
   .zakiyat .zakiyat-donation-item .zakiyat-donation-table {
     width: 100%; }
     .zakiyat .zakiyat-donation-item .zakiyat-donation-table tr td {
@@ -596,6 +621,10 @@ table {
       .zakiyat .zakiyat-donation-item .zakiyat-donation-table tr td:first-child {
         text-align: right;
         width: 250px; }
+      .zakiyat .zakiyat-donation-item .zakiyat-donation-table tr td:nth-child(2) {
+        width: 200px; }
+      .zakiyat .zakiyat-donation-item .zakiyat-donation-table tr td > span {
+        font-size: 15px; }
       .zakiyat .zakiyat-donation-item .zakiyat-donation-table tr td p {
         padding-top: 5px;
         padding-right: 30px;
@@ -608,43 +637,20 @@ table {
     .zakiyat .zakiyat-donation-item .zakiyat-donation-table .zakiyat-input span {
       margin-left: -30px;
       color: #616367; }
-    .zakiyat .zakiyat-donation-item .zakiyat-donation-table .zakiyat-donation-desc {
-      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      background: #fff;
-      position: absolute;
-      content: '';
-      width: 370px;
-      top: -215px;
-      left: -50px;
-      z-index: 99;
-      padding: 15px 0 30px 0; }
-      .zakiyat .zakiyat-donation-item .zakiyat-donation-table .zakiyat-donation-desc:before {
-        position: absolute;
-        content: '';
-        width: 0;
-        height: 0;
-        border-top: 20px solid transparent;
-        border-right: 20px solid #f1f1f1;
-        border-bottom: 20px solid transparent;
-        left: -20px;
-        bottom: 20%; }
-      .zakiyat .zakiyat-donation-item .zakiyat-donation-table .zakiyat-donation-desc .zakiyat-donation-desc-close {
-        padding-right: 20px;
-        padding-top: 5px; }
-        .zakiyat .zakiyat-donation-item .zakiyat-donation-table .zakiyat-donation-desc .zakiyat-donation-desc-close img {
-          cursor: pointer; }
-      .zakiyat .zakiyat-donation-item .zakiyat-donation-table .zakiyat-donation-desc .zakiyat-donation-desc-text p {
-        font-size: 16px;
-        padding: 0 30px; }
+    .zakiyat .zakiyat-donation-item .zakiyat-donation-table .zakiyat-input i {
+      font-family: "hypatia-black";
+      font-style: normal;
+      color: #1781e0;
+      font-size: 24px;
+      margin-left: 18px;
+      cursor: pointer; }
 
 .form-group {
   margin-bottom: 25px; }
   .form-group label {
-    color: #404040; }
+    color: #6d6f73;
+    display: inline-block;
+    margin-bottom: 5px; }
   .form-group input.text-danger {
     color: #df3333; }
     .form-group input.text-danger::-webkit-input-placeholder {
@@ -692,7 +698,9 @@ table {
   -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
   .children-card .children-card-item .children-card-pic {
-    height: 240px; }
+    height: 265px; }
+    .children-card .children-card-item .children-card-pic svg {
+      fill: #fff; }
   .children-card .children-card-item .children-card-info h4 {
     margin-top: 30px; }
   .children-card .children-card-item .children-card-donate {
@@ -708,19 +716,30 @@ table {
         .children-card .children-card-item .children-card-donate .form-check label span {
           padding-left: 3px;
           margin-top: 5px; }
-  .children-card .children-card-item .children-card-donate-cancel p {
-    font-size: 20px;
-    font-family: "hypatia-bold";
-    color: #808080;
-    cursor: pointer; }
+  .children-card .children-card-item .children-card-donate-cancel {
+    margin-top: 5px; }
+    .children-card .children-card-item .children-card-donate-cancel a:hover svg {
+      fill: #0a121a; }
+    .children-card .children-card-item .children-card-donate-cancel a:hover p {
+      color: #0a121a; }
+    .children-card .children-card-item .children-card-donate-cancel a svg {
+      fill: #808080;
+      display: inline-block; }
+    .children-card .children-card-item .children-card-donate-cancel a p {
+      display: inline-block;
+      font-size: 20px;
+      font-family: "hypatia-bold";
+      color: #808080;
+      cursor: pointer;
+      padding-left: 5px; }
 
 .footer .footer-subscribe form input {
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #0a121a;
   padding-bottom: 10px;
   font-family: "hypatia-bold";
   text-transform: uppercase;
-  color: #404040;
+  color: #6d6f73;
   width: 100%; }
 .footer .footer-items h5 {
   text-transform: uppercase; }
@@ -733,7 +752,7 @@ table {
   text-align: center;
   padding: 10px 20px;
   font-family: "hypatia-bold";
-  color: #000;
+  color: #0a121a;
   font-size: 18px;
   border: none;
   background: #fff;
@@ -748,7 +767,7 @@ table {
     .btn.active .fill-green {
       fill: #fff !important; }
   .btn.btn-bordered {
-    outline: 2px solid #000;
+    outline: 2px solid #0a121a;
     outline-offset: -2px; }
   .btn.btn-full {
     width: 100% !important;
@@ -772,7 +791,7 @@ table {
     margin-right: 10px; }
 
 .divider {
-  background: #000;
+  background: #0a121a;
   width: 100%;
   height: 4px; }
 
@@ -806,6 +825,24 @@ table {
 
 .bg-green-light {
   background: #eff2df; }
+
+.bg-children-1 {
+  background: #ffb6b5; }
+
+.bg-children-2 {
+  background: #92cec6; }
+
+.bg-children-3 {
+  background: #ffe6d7; }
+
+.bg-children-4 {
+  background: #d6d5f5; }
+
+.bg-children-5 {
+  background: #c6d8da; }
+
+.bg-children-6 {
+  background: #f5e6e3; }
 
 .hidden-290 {
   height: 290px; }

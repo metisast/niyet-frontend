@@ -8,8 +8,10 @@
     <title>Document</title>
     <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link rel="stylesheet" href="./dist/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./dist/css/niyet.css">
     <link href="./dist/css/iCheck/skins/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/tooltipster.bundle.css">
+    <link rel="stylesheet" href="./dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css">
+    <link rel="stylesheet" href="./dist/css/niyet.css">
 </head>
 <body>
     <div class="container-fluid" id="wrapper">
@@ -117,7 +119,7 @@
                                                         <ul>
                                                             <li><a href="./children.html">Дети</a></li>
                                                             <li><a href="./history.html">История</a></li>
-                                                            <li><a href="./profile.html">Личные данные</a></li>
+                                                            <li><a href="./profile.html">Профиль</a></li>
                                                             <li class="active"><a href="./zakiyat.html">О закяте</a></li>
                                                             <li><a href="#">Выйти</a></li>
                                                         </ul>
@@ -150,9 +152,20 @@
                                                                     <p><strong>Для полезных ископаемых</strong> (нефть, газ, алюминий, железо и т.п.) и найденных кладов, эквивалент которых равен 85 г золота 20%.</p>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <!-- Donation item 1 -->
+                                                            <div class="col-md-12">
                                                                 <div class="zakiyat-donation-item">
-                                                                    <h3>Ваши активы </h3>
+                                                                    <h3>Ваши активы <i class="tooltip" title="This is my span's tooltip message!" data-tooltip-content=".tooltip_actives">i</i></h3>
+                                                                                    <div class="tooltip_templates">
+                                                                                        <span class="tooltip_actives">
+                                                                                            <div class="tooltip_content_close text-right">
+                                                                                                <img src="images/close.png" alt="close">
+                                                                                            </div>
+                                                                                            <div class="tooltip_content_text">
+                                                                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                                                            </div>
+                                                                                        </span>
+                                                                                    </div>
                                                                     <table class="zakiyat-donation-table">
                                                                         <tbody>
                                                                             <tr>
@@ -163,6 +176,7 @@
                                                                                         <span>тг.</span>
                                                                                     </div>
                                                                                 </td>
+                                                                                <td></td>
                                                                             </tr>
                                                                         </tbody>
                                                                         <tbody>
@@ -194,6 +208,17 @@
                                                                                     <div class="zakiyat-input">
                                                                                         <input type="text">
                                                                                         <span>тг.</span>
+                                                                                        <i class="tooltip" title="This is my span's tooltip message!" data-tooltip-content=".tooltip_paper">i</i>
+                                                                                    </div>
+                                                                                    <div class="tooltip_templates">
+                                                                                        <span class="tooltip_paper">
+                                                                                            <div class="tooltip_content_close text-right">
+                                                                                                <img src="images/close.png" alt="close">
+                                                                                            </div>
+                                                                                            <div class="tooltip_content_text">
+                                                                                                <p>Драгоценные камни, движимое и недвижимое имущество, приобретенное для продажи или в качестве инвестиций. *Не включается дом для личного проживания, а также инвентарь, движимое имущество и иное оборудование, необходимые для осуществления бизнеса.</p>
+                                                                                            </div>
+                                                                                        </span>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
@@ -205,16 +230,17 @@
                                                                                     <div class="zakiyat-input">
                                                                                         <input type="text">
                                                                                         <span>тг.</span>
+                                                                                        <i class="tooltip" title="This is my span's tooltip message!" data-tooltip-content=".tooltip_product">i</i>
                                                                                     </div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <div class="zakiyat-donation-desc">
-                                                                                        <div class="zakiyat-donation-desc-close text-right">
-                                                                                            <img src="images/close.png" alt="close">
-                                                                                        </div>
-                                                                                        <div class="zakiyat-donation-desc-text">
-                                                                                            <p>Все товары для бизнеса: товары готовые к реализации; товары находящиеся в процессе производства; сырье для их изготовления; имущество, используемое как инвестиционный актив, в том числе: драгоценные камни, движимое и недвижимое имущество, приобретенное для продажи или в качестве инвестиций. *Не включается дом для личного проживания, а также инвентарь, движимое имущество и иное оборудование, необходимые для осуществления бизнеса.</p>
-                                                                                        </div>
+                                                                                    <div class="tooltip_templates">
+                                                                                        <span class="tooltip_product">
+                                                                                            <div class="tooltip_content_close text-right">
+                                                                                                <img src="images/close.png" alt="close">
+                                                                                            </div>
+                                                                                            <div class="tooltip_content_text">
+                                                                                                <p>Все товары для бизнеса: товары готовые к реализации; товары находящиеся в процессе производства; сырье для их изготовления; имущество, используемое как инвестиционный актив, в том числе: драгоценные камни, движимое и недвижимое имущество, приобретенное для продажи или в качестве инвестиций. *Не включается дом для личного проживания, а также инвентарь, движимое имущество и иное оборудование, необходимые для осуществления бизнеса.</p>
+                                                                                            </div>
+                                                                                        </span>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
@@ -233,7 +259,8 @@
                                                                     </table>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-8">
+                                                            <!-- Donation item 2 -->
+                                                            <div class="col-md-12">
                                                                 <div class="zakiyat-donation-item">
                                                                     <h3>Закят на скот </h3>
                                                                     <table class="zakiyat-donation-table">
@@ -243,9 +270,9 @@
                                                                                 <td>
                                                                                     <div class="zakiyat-input">
                                                                                         <input type="text">
-                                                                                        5 верблюдов эквивалентно 1 годовалому барану.
                                                                                     </div>
                                                                                 </td>
+                                                                                <td><span>5 верблюдов эквивалентно 1 годовалому барану.</span></td>
                                                                             </tr>
                                                                         </tbody>
                                                                         <tbody>
@@ -256,50 +283,54 @@
                                                                                         <input type="text">
                                                                                     </div>
                                                                                 </td>
+                                                                                <td><span>Недостаточное количество коров для закята</span></td>
                                                                             </tr>
                                                                         </tbody>
                                                                         <tbody>
-                                                                        <tr>
-                                                                            <td><p>Количество верблюдов</p></td>
-                                                                            <td>
-                                                                                <div class="zakiyat-input">
-                                                                                    <input type="text">
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
+                                                                            <tr>
+                                                                                <td><p>Количество верблюдов</p></td>
+                                                                                <td>
+                                                                                    <div class="zakiyat-input">
+                                                                                        <input type="text">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
                                                                         </tbody>
                                                                         <tbody>
-                                                                        <tr>
-                                                                            <td><p>Стоимость барана</p></td>
-                                                                            <td>
-                                                                                <div class="zakiyat-input">
-                                                                                    <input type="text">
-                                                                                    <span>тг.</span>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
+                                                                            <tr>
+                                                                                <td><p>Стоимость барана</p></td>
+                                                                                <td>
+                                                                                    <div class="zakiyat-input">
+                                                                                        <input type="text">
+                                                                                        <span>тг.</span>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td><span>* годовалому</span></td>
+                                                                            </tr>
                                                                         </tbody>
                                                                         <tbody>
-                                                                        <tr>
-                                                                            <td><p>Стоимость коровы</p></td>
-                                                                            <td>
-                                                                                <div class="zakiyat-input">
-                                                                                    <input type="text">
-                                                                                    <span>тг.</span>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
+                                                                            <tr>
+                                                                                <td><p>Стоимость коровы</p></td>
+                                                                                <td>
+                                                                                    <div class="zakiyat-input">
+                                                                                        <input type="text">
+                                                                                        <span>тг.</span>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td><span>* двухлетней</span></td>
+                                                                            </tr>
                                                                         </tbody>
                                                                         <tbody>
-                                                                        <tr>
-                                                                            <td><p>Стоимость овцы</p></td>
-                                                                            <td>
-                                                                                <div class="zakiyat-input">
-                                                                                    <input type="text">
-                                                                                    <span>тг.</span>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
+                                                                            <tr>
+                                                                                <td><p>Стоимость овцы</p></td>
+                                                                                <td>
+                                                                                    <div class="zakiyat-input">
+                                                                                        <input type="text">
+                                                                                        <span>тг.</span>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td><span>* от одного года</span></td>
+                                                                            </tr>
                                                                         </tbody>
                                                                     </table>
                                                                 </div>
@@ -361,6 +392,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="./dist/js/img-to-svg.js"></script>
 <script src="./dist/js/icheck.min.js"></script>
+<script src="./dist/js/tooltipster.bundle.min.js"></script>
 <script>
     $(document).ready(function(){
         $('input').iCheck({
@@ -377,6 +409,14 @@
         });
         $('.children-card-donate-cancel').click(function () {
             $(this).parent().parent().find('input').iCheck('uncheck');
+        });
+
+        $('.tooltip').tooltipster({
+            contentCloning: true,
+            theme: ['tooltipster-shadow', 'tooltipster-sideTip-shadow-customized'],
+            trigger: 'click',
+            side: 'right',
+            maxWidth: 420,
         });
     });
 </script>

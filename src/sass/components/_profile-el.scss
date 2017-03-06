@@ -2,7 +2,7 @@
   margin-bottom: 45px;
 }
 .profile-nav{
-  margin: 160px 0 70px 0;
+  margin: 135px 0 70px 0;
   ul{
     li{
       margin-bottom: 15px;
@@ -23,5 +23,13 @@
 .profile-password{
   h3{
     margin: 45px 0 15px 0;
+  }
+}
+.profile-form{
+  .form-group{
+    span{
+      display: inline-block;
+      margin: 0 0 0 5px;
+    }
   }
 }

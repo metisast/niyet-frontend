@@ -4,12 +4,14 @@
   width: 100%;
   height: 4px;
 }
+//
 .text-right{
   text-align: right;
 }
 .text-center{
   text-align: center;
 }
+//
 .fill-green, .fill-red{
   @include transition($transition-ease);
 }
@@ -22,6 +24,7 @@
 .fill-blue{
   fill: $color-blue;
 }
+//
 .bg-light-pink{
   background: $bg-light-pink;
 }
@@ -31,6 +34,26 @@
 .bg-green-light{
   background: $bg-green-light;
 }
+// Children card background
+.bg-children-1{
+  background: $bg-children-1;
+}
+.bg-children-2{
+  background: $bg-children-2;
+}
+.bg-children-3{
+  background: $bg-children-3;
+}
+.bg-children-4{
+  background: $bg-children-4;
+}
+.bg-children-5{
+  background: $bg-children-5;
+}
+.bg-children-6{
+  background: $bg-children-6;
+}
+//
 .hidden-290{
   height: 290px;
   @include respond-to(extra-small-screen){
@@ -43,6 +66,7 @@
 .hidden-100{
   height: 0;
 }
+//
 .m-l-minus-100{
   margin-left: -100px;
   @include respond-to(extra-small-screen){
@@ -58,15 +82,18 @@
 .m-l-minus-85{
   margin-left: -85px;
 }
+//
 .z-index-1{
   z-index: 1;
 }
 .z-index-2{
   z-index: 2;
 }
+//
 .box-shadow{
   @include box-shadow($box-shadow-card);
 }
+//
 .dots{
   position: absolute;
   content: '';

@@ -2,15 +2,15 @@
 $main-bg: #f8f8f8;
 $wrapper-bg: #fff;
 
-$bg-black: #000;
-$bg-black-secondary: #404040;
+$bg-black: #0a121a;
+$bg-black-secondary: #6d6f73;
 $bg-white: #fff;
 $bg-white-alpha-80: rgba(255,255,255,.8);
 $bg-default: #f8f8f8;
 $bg-red: #df3333;
 $bg-green: #b6cf49;
 $bg-green-light: #eff2df;
-$bg-green-dark: #0d7268;
+$bg-donation-side: #104368;
 $bg-light-pink: #fcf4ed;
 $bg-blue: #2b4567;
 $bg-gray: #f1f1f1;
@@ -18,8 +18,16 @@ $bg-gray-input: #efeff0;
 $bg-cyan: #cee1e8;
 $bg-cyan-light: #e9f3f5;
 
-$color-black: #000;
-$color-black-secondary: #404040;
+//Children card background colors
+$bg-children-1: #ffb6b5;
+$bg-children-2: #92cec6;
+$bg-children-3: #ffe6d7;
+$bg-children-4: #d6d5f5;
+$bg-children-5: #c6d8da;
+$bg-children-6: #f5e6e3;
+
+$color-black: #0a121a;
+$color-black-secondary: #6d6f73;
 $color-red: #df3333;
 $color-green: #b6cf49;
 $color-white: #fff;
@@ -27,6 +35,7 @@ $color-lighter-pink: #fbf6ef;
 $color-blue: #2b4567;
 $color-gray: #808080;
 $color-gray-table: #616367;
+$color-info: #1781e0;
 
 $transition-ease: all 0.2s ease;
 

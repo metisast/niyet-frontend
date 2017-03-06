@@ -23,6 +23,7 @@ body{
 h1,h2,h3,h4,h5,h6{
   font-family: $hypatia-bold;
   margin-bottom: 0;
+  color: $color-black;
 }
 h1{
   @include respond-to(extra-small-screen){
@@ -57,6 +58,9 @@ p{
 a,p,span{
   /*font-size: $font-size-regular;*/
   margin: 0;
+}
+span{
+  color: $color-black-secondary;
 }
 input{
   color: $color-black !important;

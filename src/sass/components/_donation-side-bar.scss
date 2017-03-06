@@ -1,11 +1,12 @@
 // Donation Side Bar
 .donation-side-bar{
-  background: $bg-green-dark;
+  background: $bg-donation-side;
   padding: 30px;
   color: $color-white;
   margin-bottom: 30px;
   h3{
     margin: 0 0 30px 0;
+    color: $color-white;
   }
   > p{
     color: $color-white;

@@ -5,7 +5,10 @@
     margin-bottom: 30px;
     @include box-shadow($box-shadow-card);
     .children-card-pic{
-      height: 240px;
+      height: 265px;
+      svg{
+        fill: $color-white;
+      }
     }
     .children-card-info{
       h4{
@@ -34,11 +37,28 @@
       }
     }
     .children-card-donate-cancel{
-      p{
-        font-size: 20px;
-        font-family: $hypatia-bold;
-        color: $color-gray;
-        cursor: pointer;
+      margin-top: 5px;
+      a{
+        &:hover{
+          svg{
+            fill: $color-black;
+          }
+          p{
+            color: $color-black;
+          }
+        }
+        svg{
+          fill: $color-gray;
+          display: inline-block;
+        }
+        p{
+          display: inline-block;
+          font-size: 20px;
+          font-family: $hypatia-bold;
+          color: $color-gray;
+          cursor: pointer;
+          padding-left: 5px;
+        }
       }
     }
   }

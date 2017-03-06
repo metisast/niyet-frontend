@@ -1,6 +1,12 @@
 // News
 .news{
   margin-top: -240px;
+  @include respond-to(extra-small-screen){
+    margin-top: -60px;
+  }
+  @include respond-to(small-screen){
+    margin-top: -60px;
+  }
 
   .row-sub{
     column-count: 4;

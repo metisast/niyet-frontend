@@ -5,11 +5,17 @@
   .sign-in-pic{
 
   }
+  .sign-in-content{
+    margin-top: 205px;
+  }
   .sign-in-form{
     margin-top:60px;
     background: $bg-white;
     @include box-shadow($box-shadow-card);
     padding: 55px 0 15px 0;
+    a{
+      font-family: $hypatia-bold;
+    }
     .sign-in-title{
       margin-bottom: 40px;
       h1{
@@ -23,7 +29,10 @@
     }
     .link-right{
       float: right;
-      font-family: $hypatia-bold;
+    }
+    .link-cancel{
+      padding-top: 11px;
+      margin-bottom: 30px;
     }
   }
 }

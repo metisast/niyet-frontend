@@ -671,6 +671,8 @@ table {
 
 .sign-in {
   margin-top: 30px; }
+  .sign-in .sign-in-content {
+    margin-top: 205px; }
   .sign-in .sign-in-form {
     margin-top: 60px;
     background: #fff;
@@ -680,6 +682,8 @@ table {
     -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 55px 0 15px 0; }
+    .sign-in .sign-in-form a {
+      font-family: "hypatia-bold"; }
     .sign-in .sign-in-form .sign-in-title {
       margin-bottom: 40px; }
       .sign-in .sign-in-form .sign-in-title h1 {
@@ -689,8 +693,10 @@ table {
       margin-bottom: 45px;
       text-align: center; }
     .sign-in .sign-in-form .link-right {
-      float: right;
-      font-family: "hypatia-bold"; }
+      float: right; }
+    .sign-in .sign-in-form .link-cancel {
+      padding-top: 11px;
+      margin-bottom: 30px; }
 
 .breadcrumbs .mute {
   color: #808080; }
@@ -947,6 +953,12 @@ table {
     height: 360px;
     right: -280px;
     top: 0;
+    z-index: 2; }
+  .dots.dots-register {
+    width: 265px;
+    height: 95px;
+    bottom: 0;
+    right: -110px;
     z-index: 2; }
 
 /*# sourceMappingURL=niyet.css.map */

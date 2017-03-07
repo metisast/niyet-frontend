@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link rel="stylesheet" href="./dist/css/bootstrap-grid.css">
+    <link href="./dist/css/iCheck/skins/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/niyet.css">
 </head>
 <body>
@@ -92,23 +93,18 @@
                             </div>
                         </div>
                     </div><!-- Header end -->
-                    <!-- Sign in start -->
+                    <!-- Register start -->
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
                                 <div class="sign-in">
                                     <div class="row">
-                                        <div class="col-md-8">
-                                            <div class="sign-in-pic">
-                                                <img src="./images/sign-in-pic.jpg" alt="sign-in-pic" class="img-fluid">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 m-l-minus-210">
+                                        <div class="col-md-6">
                                             <div class="sign-in-form">
                                                 <div class="row">
                                                     <div class="col-md-10 offset-2">
                                                         <div class="sign-in-title">
-                                                            <h1>Вход</h1>
+                                                            <h1>Регистрация</h1>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-8 offset-2">
@@ -124,24 +120,48 @@
                                                                         <label>Пароль</label>
                                                                     </div>
                                                                     <div class="col-md-6">
-                                                                        <a href="#" class="link-right">Забыли пароль?</a>
+                                                                        <span class="link-right">Минимум 6 символов</span>
                                                                     </div>
                                                                 </div>
                                                                 <input class="form-control" type="password" name="password">
                                                             </div>
-                                                            <div class="form-group row">
-                                                                <div class="col-md-12">
-                                                                    <button class="btn btn-sign-in">
-                                                                        <img class="svg icon fill-green" src="./images/svg/button_lock.svg">Войти
-                                                                    </button>
+                                                            <div class="form-group">
+                                                                <label>Повторите пароль</label>
+                                                                <input class="form-control" type="password" name="password_confirmation" >
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="form-check">
+                                                                    <label>
+                                                                        <input class="form-check-input" type="checkbox" name="anonim_status" checked>
+                                                                        <span>Анонимный донор</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="form-check">
+                                                                    <label>
+                                                                        <input class="form-check-input" type="checkbox" name="zakiyat_status">
+                                                                        <span>Внести закят</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row ">
+                                                                <div class="col-md-6">
+                                                                    <button class="btn btn-primary">Зарегистрироваться</button>
+                                                                </div>
+                                                                <div class="col-md-6 text-right link-cancel">
+                                                                    <a href="./sign-in.html">Отмена</a>
                                                                 </div>
                                                             </div>
                                                         </form>
-                                                        <div class="sing-in-label">
-                                                            <p>Ещё не зарегистрированы? <a href="./register.html">Зарегистрироваться</a></p>
-                                                        </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="sign-in-content">
+                                                <p>Фонд «Ниет» является светским фондом и работает согласно законодательству Республики Казахстан. Главной нашей миссией, всегда, является благосостояние и здоровье детей, поэтому мы принимает пожертвования от всех граждан не зависимо от их национальности, происхождения, статуса и вере исповедания. Мы даём возможности к совершению пожертвований, верующим мусульманам в уплате ежегодного мусульманского налога — Закят. Если вы хотите помочь Фонду через выплату закята, пожалуйста укажите это при регистрации. В таком случае пользователям, указавшим это, будет доступна дополнительная функция в виде калькулятора для расчёта мусульманского налога. </p>
+                                                <div class="dots dots-register hidden-sm-down"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -195,5 +215,15 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="./dist/js/img-to-svg.js"></script>
+<script src="./dist/js/icheck.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+            increaseArea: '50%' // optional
+        });
+    });
+</script>
 <!--<script src="./dist/js/mobile-menu.js"></script>-->
 </html>

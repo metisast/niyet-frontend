@@ -5,9 +5,31 @@
     margin-bottom: 30px;
     @include box-shadow($box-shadow-card);
     .children-card-pic{
+      position: relative;
       height: 265px;
+      &:hover{
+        section{
+          opacity: 1;
+        }
+      }
       svg{
         fill: $color-white;
+      }
+      section{
+        @include transition($transition-ease);
+        opacity: 0;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height:100%;
+        background: rgba(0, 0, 0, .5);
+        top: 0;
+        text-align: left;
+        p{
+          color: $color-white;
+          font-family: $hypatia-bold;
+          padding: 30px;
+        }
       }
     }
     .children-card-info{

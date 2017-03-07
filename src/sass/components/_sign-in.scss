@@ -2,19 +2,28 @@
 
 .sign-in{
   margin-top: 30px;
-  .sign-in-desc{
-    margin-bottom: 30px;
-    padding-top: 150px;
+  .sign-in-pic{
+
   }
   .sign-in-form{
+    margin-top:60px;
     background: $bg-white;
     @include box-shadow($box-shadow-card);
-    padding: 55px 100px 15px 100px;
+    padding: 55px 0 15px 0;
     .sign-in-title{
       margin-bottom: 40px;
       h1{
         margin-top: 0;
       }
+    }
+    .sing-in-label{
+      margin-top: 10px;
+      margin-bottom: 45px;
+      text-align: center;
+    }
+    .link-right{
+      float: right;
+      font-family: $hypatia-bold;
     }
   }
 }

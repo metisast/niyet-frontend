@@ -671,21 +671,26 @@ table {
 
 .sign-in {
   margin-top: 30px; }
-  .sign-in .sign-in-desc {
-    margin-bottom: 30px;
-    padding-top: 150px; }
   .sign-in .sign-in-form {
+    margin-top: 60px;
     background: #fff;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 55px 100px 15px 100px; }
+    padding: 55px 0 15px 0; }
     .sign-in .sign-in-form .sign-in-title {
       margin-bottom: 40px; }
       .sign-in .sign-in-form .sign-in-title h1 {
         margin-top: 0; }
+    .sign-in .sign-in-form .sing-in-label {
+      margin-top: 10px;
+      margin-bottom: 45px;
+      text-align: center; }
+    .sign-in .sign-in-form .link-right {
+      float: right;
+      font-family: "hypatia-bold"; }
 
 .breadcrumbs .mute {
   color: #808080; }
@@ -698,9 +703,30 @@ table {
   -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
   .children-card .children-card-item .children-card-pic {
+    position: relative;
     height: 265px; }
+    .children-card .children-card-item .children-card-pic:hover section {
+      opacity: 1; }
     .children-card .children-card-item .children-card-pic svg {
       fill: #fff; }
+    .children-card .children-card-item .children-card-pic section {
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      opacity: 0;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      top: 0;
+      text-align: left; }
+      .children-card .children-card-item .children-card-pic section p {
+        color: #fff;
+        font-family: "hypatia-bold";
+        padding: 30px; }
   .children-card .children-card-item .children-card-info h4 {
     margin-top: 30px; }
   .children-card .children-card-item .children-card-donate {
@@ -733,20 +759,22 @@ table {
       cursor: pointer;
       padding-left: 5px; }
 
-.footer .footer-subscribe form input {
-  border: none;
-  border-bottom: 2px solid #0a121a;
-  padding-bottom: 10px;
-  font-family: "hypatia-bold";
-  text-transform: uppercase;
-  color: #6d6f73;
-  width: 100%; }
-.footer .footer-items h5 {
-  text-transform: uppercase; }
-.footer .footer-social-icons {
-  margin-top: 30px; }
-  .footer .footer-social-icons a {
-    margin-left: 15px; }
+.footer {
+  margin-top: 120px; }
+  .footer .footer-subscribe form input {
+    border: none;
+    border-bottom: 2px solid #0a121a;
+    padding-bottom: 10px;
+    font-family: "hypatia-bold";
+    text-transform: uppercase;
+    color: #6d6f73;
+    width: 100%; }
+  .footer .footer-items h5 {
+    text-transform: uppercase; }
+  .footer .footer-social-icons {
+    margin-top: 30px; }
+    .footer .footer-social-icons a {
+      margin-left: 15px; }
 
 .btn {
   text-align: center;
@@ -855,6 +883,9 @@ table {
 
 .hidden-100 {
   height: 0; }
+
+.m-l-minus-210 {
+  margin-left: -210px; }
 
 .m-l-minus-100 {
   margin-left: -100px; }

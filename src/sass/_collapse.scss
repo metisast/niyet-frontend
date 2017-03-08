@@ -1,0 +1,19 @@
+// Collapse
+
+.collapse{
+  display: none;
+  &.open{
+    display: inline-block;
+  }
+}
+.collapse-trigger-group{
+  .collapse-trigger{
+    display: inline-block;
+    &[data-collapse-open="true"]{
+      svg{
+        transform: rotate(180deg);
+      }
+    }
+  }
+  @include info-icon;
+}

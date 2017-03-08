@@ -62,6 +62,11 @@ a,p,span{
 span{
   color: $color-black-secondary;
 }
+strong{
+  font-style: normal;
+  font-weight: normal;
+  font-family: $hypatia-bold;
+}
 input{
   color: $color-black !important;
   padding: 10px 15px;

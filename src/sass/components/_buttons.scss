@@ -13,6 +13,9 @@
     .fill-green{
       fill: $color-white !important;
     }
+    .fill-red{
+      fill: $color-white !important;
+    }
   }
   @include transition($transition-ease);
   &.btn-bordered{
@@ -36,8 +39,13 @@
       background: $bg-green;
     }
   }
-  &.btn-help:hover{
-    background: $bg-red;
+  &.btn-help{
+    &:hover{
+      background: $bg-red;
+    }
+    &.active{
+      background: $bg-red;
+    }
   }
   &.btn-primary:hover{
     background: $bg-blue;

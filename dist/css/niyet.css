@@ -723,6 +723,16 @@ table {
       color: #df3333; }
     .form-group input.text-danger:-ms-input-placeholder {
       color: #df3333; }
+  .form-group.has-danger input {
+    color: #df3333; }
+    .form-group.has-danger input::-webkit-input-placeholder {
+      color: #df3333; }
+    .form-group.has-danger input:-moz-placeholder {
+      color: #df3333; }
+    .form-group.has-danger input::-moz-placeholder {
+      color: #df3333; }
+    .form-group.has-danger input:-ms-input-placeholder {
+      color: #df3333; }
 
 .form-control {
   border-radius: 0;

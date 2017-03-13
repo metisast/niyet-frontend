@@ -862,6 +862,7 @@ table {
   #footer .footer-logo {
     margin-top: 35px; }
     #footer .footer-logo a {
+      padding: 0 15px 0 0;
       display: block; }
     #footer .footer-logo .by {
       margin-top: 40px; }

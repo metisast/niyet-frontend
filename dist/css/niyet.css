@@ -235,6 +235,11 @@ table {
   font-family: "hypatia-bold"; }
 .main-title p {
   color: #0a121a; }
+.main-title .main-title-date strong {
+  padding: 55px 0 0 25px;
+  display: block; }
+.main-title .main-title-date .divider {
+  width: 70px; }
 
 .main-title-pic {
   margin-top: -290px; }
@@ -969,6 +974,9 @@ table {
 
 .bg-green-light {
   background: #eff2df; }
+
+.bg-cyan-light {
+  background: #e9f3f5; }
 
 .bg-children-1 {
   background: #ffb6b5; }

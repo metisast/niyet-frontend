@@ -854,8 +854,14 @@ table {
   margin-top: 25px;
   margin-bottom: 30px;
   background: #f8f8f8; }
-  #footer .footer-logo small {
-    color: #b9bbbc; }
+  #footer .footer-logo {
+    margin-top: 35px; }
+    #footer .footer-logo a {
+      display: block; }
+    #footer .footer-logo .by {
+      margin-top: 40px; }
+      #footer .footer-logo .by small {
+        color: #b9bbbc; }
   #footer .footer-subscribe {
     margin-top: 20px; }
     #footer .footer-subscribe form input {

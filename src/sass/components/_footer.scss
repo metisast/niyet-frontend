@@ -4,12 +4,17 @@
   margin-bottom: 30px;
   background: $main-bg;
   .footer-logo{
-    svg{
+    margin-top: 35px;
+    a{
+      display: block;
+    }
+    .by{
+      margin-top: 40px;
+      small{
+        color: #b9bbbc;
+      }
+    }
 
-    }
-    small{
-      color: #b9bbbc;
-    }
   }
   .footer-subscribe{
     margin-top: 20px;

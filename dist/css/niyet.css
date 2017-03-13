@@ -111,21 +111,21 @@ table {
   margin-left: 18px;
   cursor: pointer; }
 
-#wrapper {
+#wrapper, #footer {
   background-color: #fff; }
   @media only screen and (max-width: 544px) {
-    #wrapper {
+    #wrapper, #footer {
       padding: 0; } }
   @media only screen and (min-width: 545px) and (max-width: 767px) {
-    #wrapper {
+    #wrapper, #footer {
       padding: 0; } }
-  #wrapper > section {
+  #wrapper > section, #footer > section {
     padding: 0 35px; }
     @media only screen and (max-width: 544px) {
-      #wrapper > section {
+      #wrapper > section, #footer > section {
         padding: 0; } }
     @media only screen and (min-width: 545px) and (max-width: 767px) {
-      #wrapper > section {
+      #wrapper > section, #footer > section {
         padding: 0; } }
 
 #header {
@@ -850,26 +850,38 @@ table {
       cursor: pointer;
       padding-left: 5px; }
 
-.footer {
-  margin-top: 120px; }
-  .footer .footer-subscribe form input {
-    border: none;
-    border-bottom: 2px solid #0a121a;
-    padding-bottom: 10px;
-    font-family: "hypatia-bold";
+#footer {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  background: #f8f8f8; }
+  #footer .footer-logo small {
+    color: #b9bbbc; }
+  #footer .footer-subscribe {
+    margin-top: 20px; }
+    #footer .footer-subscribe form input {
+      background: #fff;
+      border: transparent;
+      padding: 15px 20px; }
+    #footer .footer-subscribe form .btn-black {
+      height: 100%; }
+  #footer .footer-items h5 {
     text-transform: uppercase;
-    color: #6d6f73;
-    width: 100%; }
-  .footer .footer-items h5 {
-    text-transform: uppercase; }
-  .footer .footer-social-icons {
-    margin-top: 30px; }
-    .footer .footer-social-icons a {
-      margin-left: 15px; }
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  #footer .footer-items p {
+    color: #0a121a; }
+  #footer .footer-social-icons {
+    margin-top: 30px;
+    height: 50px; }
+    #footer .footer-social-icons a {
+      margin-right: 30px;
+      line-height: 40px;
+      display: block;
+      float: left; }
 
 .btn {
   text-align: center;
-  padding: 10px 20px;
+  padding: 12px 20px 10px 20px;
   font-family: "hypatia-bold";
   color: #0a121a;
   font-size: 18px;
@@ -903,6 +915,9 @@ table {
     background: #df3333; }
   .btn.btn-help.active {
     background: #df3333; }
+  .btn.btn-black {
+    background: #0a121a;
+    color: #fff; }
   .btn.btn-primary:hover {
     background: #2b4567; }
   .btn:hover .fill-red, .btn:hover .fill-green, .btn:hover .fill-blue {

@@ -1,4 +1,4 @@
-#wrapper{
+#wrapper, #footer{
   background-color: $wrapper-bg;
   @include respond-to(extra-small-screen){
     padding: 0;

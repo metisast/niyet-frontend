@@ -755,7 +755,7 @@ table {
   .sign-in .sign-in-content {
     margin-top: 205px; }
   .sign-in .sign-in-form {
-    margin-top: 60px;
+    margin-top: 40px;
     background: #fff;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -771,6 +771,11 @@ table {
       margin-bottom: 40px; }
       .sign-in .sign-in-form .sign-in-title h1 {
         margin-top: 0; }
+      .sign-in .sign-in-form .sign-in-title.page-404 h1 {
+        margin-bottom: 5px; }
+      .sign-in .sign-in-form .sign-in-title.page-404 h3 {
+        margin-top: 0;
+        margin-bottom: 20px; }
     .sign-in .sign-in-form .form-group.help input {
       padding-top: 13px;
       padding-bottom: 11px; }
@@ -787,6 +792,10 @@ table {
         color: #6d6f73; }
     .sign-in .sign-in-form .link-right {
       float: right; }
+    .sign-in .sign-in-form .page-404-links {
+      margin-bottom: 40px; }
+      .sign-in .sign-in-form .page-404-links a {
+        margin-right: 20px; }
 
 .breadcrumbs .mute {
   color: #808080; }
